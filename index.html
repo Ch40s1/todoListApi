@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<title>Hello, world!</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<meta name="description" content="" />
+
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<link rel="icon" href="favicon.png">
+
+</head>
+
+<body>
+
+	<h1>Welcome!</h1>
+	<nav>
+		<ul>
+			<li id="switch-forms" class="underline">Sign up</li>
+		</ul>
+	</nav>
+
+	<section class="login-container">
+		<h2 class="text-lg">Login</h2>
+		<form id="login_form">
+			<div class="form-group">
+				<label for="login-username">Username:</label>
+				<input type="text" class="input" id="login-username" name="username" required>
+			</div>
+			<div class="form-group">
+				<label for="login-password">Password:</label>
+				<input type="password" class="input" id="login-password" name="password" required>
+			</div>
+			<button type="submit" class="btn">Login</button>
+		</form>
+	</section>
+
+	<section class="sign-up-container hidden">
+		<h2>Sign Up</h2>
+		<form id="sign_up_form">
+			<div class="form-group">
+				<label for="signup-username">Username:</label>
+				<input type="text" class="input" class="input" id="signup-username" name="username"
+					required>
+			</div>
+			<div class="form-group">
+				<label for="signup-password">Password:</label>
+				<input type="password" class="input" id="signup-password" name="password" required>
+			</div>
+			<button type="submit" class="btn">Sign up</button>
+		</form>
+	</section>
+
+
+
+	<script type="module" src="app.js"></script>
+
+</body>
+
+</html>
